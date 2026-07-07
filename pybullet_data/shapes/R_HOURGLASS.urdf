@@ -1,0 +1,308 @@
+
+<?xml version='1.0'?>
+<robot name='shape'>
+    <!-- Definition of the base -->
+
+    <link name='base'>
+        <visual>
+            <geometry>
+                <cylinder length='.1' radius='0.6'/>
+            </geometry>
+            <material name='base_material'>
+                <color rgba='1 1 1 1'/> 
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder length='.1' radius='0.6'/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz='0 0 0'/> 
+            <mass value='100'/>
+            <inertia ixx='11.999999999999998' ixy='0' ixz='0' iyy='11.999999999999998' iyz='0' izz='18.0'/>
+        </inertial>
+    </link>
+<!-- Definition of the shape -->
+ 
+    <link name='0'>
+        <visual>
+            <origin xyz='0 0 0' rpy='0 0 0'/>
+            <geometry>
+                <cylinder length='0.1' radius='0.509090909090909'/>
+            </geometry>
+            <material name='red'>
+                <color rgba='1 1 1 1'/>
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder length='0.1' radius='0.509090909090909'/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz='0 0 0'/> 
+            <mass value='1.645330535152151'/>
+            <inertia ixx='0.10797764923873857' ixy='0' ixz='0' iyy='0.10797764923873857' iyz='0' izz='0.21321308091889024'/>
+        </inertial>
+    </link>
+
+    <joint name='0_joint' type='fixed'>
+        <parent link='base'/>
+        <child link='0'/>
+        <origin xyz='0 0 0.1' rpy='0 0 0'/>
+    </joint>
+ 
+    <link name='1'>
+        <visual>
+            <origin xyz='0 0 0' rpy='0 0 0'/>
+            <geometry>
+                <cylinder length='0.1' radius='0.41818181818181815'/>
+            </geometry>
+            <material name='red'>
+                <color rgba='1 1 1 1'/>
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder length='0.1' radius='0.41818181818181815'/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz='0 0 0'/> 
+            <mass value='1.1101783840503674'/>
+            <inertia ixx='0.04946104660070128' ixy='0' ixz='0' iyy='0.04946104660070128' iyz='0' izz='0.09707179589465194'/>
+        </inertial>
+    </link>
+
+    <joint name='1_joint' type='fixed'>
+        <parent link='base'/>
+        <child link='1'/>
+        <origin xyz='0 0 0.2' rpy='0 0 0'/>
+    </joint>
+ 
+    <link name='2'>
+        <visual>
+            <origin xyz='0 0 0' rpy='0 0 0'/>
+            <geometry>
+                <cylinder length='0.1' radius='0.32727272727272727'/>
+            </geometry>
+            <material name='red'>
+                <color rgba='1 1 1 1'/>
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder length='0.1' radius='0.32727272727272727'/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz='0 0 0'/> 
+            <mass value='0.6799580272822667'/>
+            <inertia ixx='0.018773772254646055' ixy='0' ixz='0' iyy='0.018773772254646055' iyz='0' izz='0.036414281130488335'/>
+        </inertial>
+    </link>
+
+    <joint name='2_joint' type='fixed'>
+        <parent link='base'/>
+        <child link='2'/>
+        <origin xyz='0 0 0.3' rpy='0 0 0'/>
+    </joint>
+ 
+    <link name='3'>
+        <visual>
+            <origin xyz='0 0 0' rpy='0 0 0'/>
+            <geometry>
+                <cylinder length='0.1' radius='0.23636363636363633'/>
+            </geometry>
+            <material name='red'>
+                <color rgba='1 1 1 1'/>
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder length='0.1' radius='0.23636363636363633'/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz='0 0 0'/> 
+            <mass value='0.35466946484784884'/>
+            <inertia ixx='0.005249205784834897' ixy='0' ixz='0' iyy='0.005249205784834897' iyz='0' izz='0.009907295794923377'/>
+        </inertial>
+    </link>
+
+    <joint name='3_joint' type='fixed'>
+        <parent link='base'/>
+        <child link='3'/>
+        <origin xyz='0 0 0.39999999999999997' rpy='0 0 0'/>
+    </joint>
+ 
+    <link name='4'>
+        <visual>
+            <origin xyz='0 0 0' rpy='0 0 0'/>
+            <geometry>
+                <cylinder length='0.1' radius='0.14545454545454545'/>
+            </geometry>
+            <material name='red'>
+                <color rgba='1 1 1 1'/>
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder length='0.1' radius='0.14545454545454545'/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz='0 0 0'/> 
+            <mass value='0.1343126967471144'/>
+            <inertia ixx='0.0008223415110756522' ixy='0' ixz='0' iyy='0.0008223415110756522' iyz='0' izz='0.0014208285275727804'/>
+        </inertial>
+    </link>
+
+    <joint name='4_joint' type='fixed'>
+        <parent link='base'/>
+        <child link='4'/>
+        <origin xyz='0 0 0.49999999999999994' rpy='0 0 0'/>
+    </joint>
+ 
+    <link name='5'>
+        <visual>
+            <origin xyz='0 0 0' rpy='0 0 0'/>
+            <geometry>
+                <cylinder length='0.1' radius='0.23636363636363633'/>
+            </geometry>
+            <material name='red'>
+                <color rgba='1 1 1 1'/>
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder length='0.1' radius='0.23636363636363633'/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz='0 0 0'/> 
+            <mass value='0.35466946484784884'/>
+            <inertia ixx='0.005249205784834897' ixy='0' ixz='0' iyy='0.005249205784834897' iyz='0' izz='0.009907295794923377'/>
+        </inertial>
+    </link>
+
+    <joint name='5_joint' type='fixed'>
+        <parent link='base'/>
+        <child link='5'/>
+        <origin xyz='0 0 0.6' rpy='0 0 0'/>
+    </joint>
+ 
+    <link name='6'>
+        <visual>
+            <origin xyz='0 0 0' rpy='0 0 0'/>
+            <geometry>
+                <cylinder length='0.1' radius='0.32727272727272727'/>
+            </geometry>
+            <material name='red'>
+                <color rgba='1 1 1 1'/>
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder length='0.1' radius='0.32727272727272727'/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz='0 0 0'/> 
+            <mass value='0.6799580272822667'/>
+            <inertia ixx='0.018773772254646055' ixy='0' ixz='0' iyy='0.018773772254646055' iyz='0' izz='0.036414281130488335'/>
+        </inertial>
+    </link>
+
+    <joint name='6_joint' type='fixed'>
+        <parent link='base'/>
+        <child link='6'/>
+        <origin xyz='0 0 0.7' rpy='0 0 0'/>
+    </joint>
+ 
+    <link name='7'>
+        <visual>
+            <origin xyz='0 0 0' rpy='0 0 0'/>
+            <geometry>
+                <cylinder length='0.1' radius='0.41818181818181815'/>
+            </geometry>
+            <material name='red'>
+                <color rgba='1 1 1 1'/>
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder length='0.1' radius='0.41818181818181815'/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz='0 0 0'/> 
+            <mass value='1.1101783840503674'/>
+            <inertia ixx='0.04946104660070128' ixy='0' ixz='0' iyy='0.04946104660070128' iyz='0' izz='0.09707179589465194'/>
+        </inertial>
+    </link>
+
+    <joint name='7_joint' type='fixed'>
+        <parent link='base'/>
+        <child link='7'/>
+        <origin xyz='0 0 0.7999999999999999' rpy='0 0 0'/>
+    </joint>
+ 
+    <link name='8'>
+        <visual>
+            <origin xyz='0 0 0' rpy='0 0 0'/>
+            <geometry>
+                <cylinder length='0.1' radius='0.509090909090909'/>
+            </geometry>
+            <material name='red'>
+                <color rgba='1 1 1 1'/>
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder length='0.1' radius='0.509090909090909'/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz='0 0 0'/> 
+            <mass value='1.645330535152151'/>
+            <inertia ixx='0.10797764923873857' ixy='0' ixz='0' iyy='0.10797764923873857' iyz='0' izz='0.21321308091889024'/>
+        </inertial>
+    </link>
+
+    <joint name='8_joint' type='fixed'>
+        <parent link='base'/>
+        <child link='8'/>
+        <origin xyz='0 0 0.8999999999999999' rpy='0 0 0'/>
+    </joint>
+ 
+    <link name='9'>
+        <visual>
+            <origin xyz='0 0 0' rpy='0 0 0'/>
+            <geometry>
+                <cylinder length='0.1' radius='0.6'/>
+            </geometry>
+            <material name='red'>
+                <color rgba='1 1 1 1'/>
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder length='0.1' radius='0.6'/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz='0 0 0'/> 
+            <mass value='2.285414480587619'/>
+            <inertia ixx='0.20759181532004206' ixy='0' ixz='0' iyy='0.20759181532004206' iyz='0' izz='0.4113746065057714'/>
+        </inertial>
+    </link>
+
+    <joint name='9_joint' type='fixed'>
+        <parent link='base'/>
+        <child link='9'/>
+        <origin xyz='0 0 0.9999999999999999' rpy='0 0 0'/>
+    </joint>
+
+</robot>

@@ -1,0 +1,56 @@
+
+<?xml version='1.0'?>
+<robot name='shape'>
+    <!-- Definition of the base -->
+
+    <link name='base'>
+        <visual>
+            <geometry>
+                <cylinder length='.1' radius='0.6'/>
+            </geometry>
+            <material name='base_material'>
+                <color rgba='1 1 1 1'/> 
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder length='.1' radius='0.6'/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz='0 0 0'/> 
+            <mass value='100'/>
+            <inertia ixx='11.999999999999998' ixy='0' ixz='0' iyy='11.999999999999998' iyz='0' izz='18.0'/>
+        </inertial>
+    </link>
+<!-- Definition of the shape -->
+ 
+    <link name='0'>
+        <visual>
+            <origin xyz='0 0 0' rpy='0 0 0'/>
+            <geometry>
+                <cylinder length='1' radius='0.6'/>
+            </geometry>
+            <material name='red'>
+                <color rgba='1 1 1 1'/>
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder length='1' radius='0.6'/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz='0 0 0'/> 
+            <mass value='10.0'/>
+            <inertia ixx='1.7333333333333332' ixy='0' ixz='0' iyy='1.7333333333333332' iyz='0' izz='1.7999999999999998'/>
+        </inertial>
+    </link>
+
+    <joint name='0_joint' type='fixed'>
+        <parent link='base'/>
+        <child link='0'/>
+        <origin xyz='0 0 0.55' rpy='0 0 0'/>
+    </joint>
+
+</robot>
