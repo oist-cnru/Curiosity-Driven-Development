@@ -814,8 +814,8 @@ parser.add_argument('--agents',                         type=int,           defa
                     help='How many agents are trained in this job?')
 parser.add_argument('--previous_agents',                type=int,           default = 0,
                     help='How many agents with this argument-set are trained in previous jobs?')
-parser.add_argument('--init_seed',                      type=float,         default = 0,   
-                    help='Random seed.')
+parser.add_argument('--init_seed',                      type=float,         default = 33333,   
+                    help='Random seed. Due to versions of python packages, results may vary.')
 parser.add_argument('--comp',                           type=str,           default = 'deigo',
                     help='Cluster name (deigo or saion).')
 parser.add_argument('--device',                         type=str,           default = device,
